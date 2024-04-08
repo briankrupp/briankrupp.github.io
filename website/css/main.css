@@ -1,0 +1,21 @@
+
+:root {
+    --body-bg: #FFFFFF;
+    --body-color: #333333;
+    --link-color: #248cb2;
+}
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: var(--link-color);
+}
+a:hover {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+div.card a {
+    border-color: var(--link-color);
+    background-color: var(--link-color);
+    color:white;
+}
