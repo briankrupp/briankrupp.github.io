@@ -1,21 +1,54 @@
-
 :root {
     --body-bg: #FFFFFF;
     --body-color: #333333;
     --link-color: #248cb2;
 }
+
+@media (prefers-color-scheme:light) {
+    :root {
+        --body-bg: rgb(250, 250, 250);
+        --border-color: #444444;
+        --link-color: #248cb2;
+    }
+}
+
+@media (prefers-color-scheme:dark) {
+    :root {
+        --body-bg: #333333;
+        --body-color: #CCCCCC;
+        --link-color: #9999FF;
+    }
+}
+
+body, .container, .div {
+    font-family: OpenSansLight, "Helvetica", sans-serif;
+    font-weight:300;
+    background-color: var(--body-bg);
+    color: var(--body-color);
+  }
+
+
+
 a:link,
 a:visited,
 a:active {
     text-decoration: none;
     color: var(--link-color);
 }
+
 a:hover {
     text-decoration: underline;
     color: var(--link-color);
 }
+
+div.card, .alert {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    border-color: var(--body-color);
+}
+
 div.card a {
     border-color: var(--link-color);
     background-color: var(--link-color);
-    color:white;
+    color: white;
 }
