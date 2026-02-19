@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme:dark) {
     :root {
-        --body-bg: #333333;
+        --body-bg: #121212;
         --body-color: #CCCCCC;
         --link-color: #9999FF;
     }
